@@ -13,10 +13,11 @@
 <body>
 
   <nav class="navbar nav-expand-lg navbar-light bg-dark sticky-top">
-    <a href="/bistrot" class="navbar-brand ms-2 text-white">BAR</a>
+    <a href="/examenPhp" class="navbar-brand ms-2 text-white">Accueil</a>
     <div class="d-flex flex-column align-items-center">
       <ul class=" d-flex flex-row">
-        <li class="nav-item"><a href="?type=cocktail&action=index" class="btn btn-info">Accéder à l'examen</a></li>
+      <li class="nav-item"><a href="?type=velo&action=new" class="btn btn-info">Ajouter un vélo</a></li>
+        <li class="nav-item"><a href="?type=velo&action=index" class="btn btn-info">Accéder à l'examen</a></li>
       </ul>
     </div>
 
@@ -25,13 +26,13 @@
   <div class="alert alert-warning alert-dismissible fade <?php if ($_GET['info'] == 'errDel') {
                                                             echo "show";
                                                           } ?>" role="alert">
-    <strong>Erreur</strong> Je n'ai pas pu supprimer ce cocktail car il n'existe pas, petit malin.
+    <strong>Erreur</strong> Je n'ai pas pu supprimer ce vélo car il n'existe pas.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   <div class="alert alert-warning alert-dismissible fade <?php if ($_GET['info'] == 'noId') {
                                                             echo "show";
                                                           } ?>" role="alert">
-    <strong>Erreur</strong> ce cocktail n'existe pas, petit malin.
+    <strong>Attention</strong> ce vélo n'existe pas.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   <div class="container">

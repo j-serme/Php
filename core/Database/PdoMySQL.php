@@ -21,7 +21,7 @@ class PdoMySql
         // 3eme parametre est le mdp pour accéder a la BDD
         // 4eme est un tableau de parametre pour afficher les erreurs et préciser que le retour de fetch sont des objets
 
-        $pdo = new \PDO("mysql:host=localhost;dbname=bistrot;charset=utf8", "luc", "Coucou11$!", [
+        $pdo = new \PDO("mysql:host=localhost;dbname=magasinVelo;charset=utf8", "jeannie", "Longo11!", [
             \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_OBJ
         ]);

@@ -96,29 +96,5 @@ abstract class AbstractModel
             "id" => $id
         ]);
     }
-
-    // /**
-    // * 
-    // * Ajoute un nouveau cocktail dans la BDD
-    // * 
-    // * @param Cocktail $cocktail
-    // * 
-    // * @return void
-    // * 
-    // */
-
-    // Déclarer des propriétés privées
-    // Mettre en place les getter et les setter de chacune des propriétés
-                            
-    // public function save(Cocktail $cocktail): void
-    // {
-        
-    //    $sql = $this->pdo->prepare("INSERT INTO {$this->nomDeLaTable}(name, image, ingredients) VALUES (:nom,:image,:ingredients)");
-
-    //    $sql->execute([
-    //        "nom" => $cocktail->name,
-    //        "image" => $cocktail->image,
-    //        "ingredients" => $cocktail->ingredients
-    //    ]);
-    // }
+    
 }
